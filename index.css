@@ -1,0 +1,119 @@
+
+.top-header {
+padding: 5px;
+background-color: black;
+}
+
+
+.information, .addresses {
+font-weight: bold;
+font-size: x-small;
+display: flex;
+justify-content: space-between;
+ }
+  
+
+h2, h3 {
+font-size: medium;
+}
+
+
+.exhibition{
+padding: 3px;
+color: white;
+background-color: black;
+}
+
+p {
+font-size: small;
+}
+
+.social-media {
+display: flex;
+justify-content: end;
+background-color: #F5F5F5F5;
+padding: 8px;
+}
+
+.science, .vr {
+background-color: #F5F5F5F5;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    background: url('/images/header.jpg') center/cover no-repeat;
+    height: 10vh; /* 100% of the viewport height */
+    color: white; /* Adjust text color as needed */
+}
+
+.content {
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Adjust link color as needed */
+    font-weight: bold;
+}
+
+
+
+.content-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 20px; /* Adjust as needed */
+}
+
+section {
+    margin-left: 20px; /* Add some space between the sections */
+}
+
+section img {
+    display: block;
+    width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+
+    nav {
+        bottom: 10px;
+    }
+}
