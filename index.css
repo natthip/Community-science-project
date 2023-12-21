@@ -1,110 +1,149 @@
 
-.top-header {
-padding: 5px;
-background-color: black;
-}
-
-
-.information, .addresses {
-font-weight: bold;
-font-size: x-small;
-display: flex;
-justify-content: space-between;
- }
-  
-
-h2, h3 {
-font-size: medium;
-}
-
-
-.exhibition{
-padding: 3px;
-color: white;
-background-color: black;
-}
-
-p {
-font-size: small;
-}
-
-.social-media {
-display: flex;
-justify-content: end;
-background-color: #F5F5F5F5;
-padding: 8px;
-}
-
-.science, .vr {
-background-color: #F5F5F5F5;
-}
-
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* LOGO/HEADER */
+.top-header {
+ background-color: black;
+}
+
+.logo {
+max-width: 190px;
 }
 
 .header-container {
-    position: relative;
-    text-align: center;
-    background: url('/images/header.jpg') center/cover no-repeat;
-    height: 10vh; /* 100% of the viewport height */
-    color: white; /* Adjust text color as needed */
+    background-color: #000000;
+    color: #fff; /* Text color for better contrast */
 }
 
-.content {
-    position: absolute;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-ul {
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center align flex items */
 }
 
-li {
-    display: inline-block;
-    margin-right: 15px;
+nav li {
+    margin: 20px; /* Adjust margin between menu items */
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: white; /* Adjust link color as needed */
+    color: #fff; /* Link color */
     font-weight: bold;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+nav a:hover {
+    color:#A73E1E; /* Black color on hover */
 }
 
 
+
+/* WELCOME/INTRO */
+.intro {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;   /* Set left and right margins to 'auto' */
+    text-align: center; /* Center-align text within the div */
+    color: #000000;
+}
+
+
+
+/* MAIN CONTENT */
 
 .content-container {
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    padding: 20px; /* Adjust as needed */
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 20px; /* Adjust the padding as needed */
 }
 
-section {
-    margin-left: 20px; /* Add some space between the sections */
+.content {
+    flex: 0 0 30%; /* Adjust the width of each section as needed */
+    background-color: #fff; /* Set background color for each section */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 50px; /* Adjust the space between sections */
 }
 
-section img {
-    display: block;
-    width: 100%; /* Make images responsive */
+.image-section-text {
+font-weight: bolder;
+}
+
+
+
+
+/* EXHIBITIONS SECTION - INDEX PAGE */
+
+.exhibitions-information {
+color: #000000;
+font-size: small;
+}
+
+
+
+/* IMAGES */
+.images {
+    width: 100%;
     height: auto;
 }
 
-p {
-    margin: 10px 0;
+.location-image {
+max-width: 300px;
 }
+
+
+/* FORMS AND BUTTONS */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer-section {
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 10px;
+}
+
+.footer-logo {
+max-width: 100px;
+}
+
 
 
 /* Media query for smaller screens */
