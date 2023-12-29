@@ -1,68 +1,62 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Community Science Museum project</title>
-    <meta name="description" content="The community science museum site
-      provides information about our fun and educational exhibitions for kids and teens in school.
-      Explore the fascinating world of science, connect with a vibrant community, and ignite your curiosity at the science museum community.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+  <title>Community Science Museum Project</title>
+  <meta name="description" content="The community science museum site provides information about our fun and educational exhibitions for kids and teens in school. Explore the fascinating world of science, connect with a vibrant community, and ignite your curiosity at the science museum community.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="assets/index.css">
 </head>
 <body>
 
 <header>
-<div class="top-header">
-<img src="/images/logo.png" alt="logo of the community science museum" class="logo">
-</div>
+  <div class="top-header">
+    <img src="/images/logo.png" alt="Logo of the community science museum" class="logo">
+  </div>
 
-<div class="header-container">
- <nav>
-     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contribution.html">Contribution</a></li>
-        <li><a href="exhibitions.html">Exhibitions</a></li>
-        <li><a href="about.html">About us</a></li>
-     </ul>
+  <nav class="header-container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contribution.html">Contribution</a></li>
+      <li><a href="exhibitions.html">Exhibitions</a></li>
+      <li><a href="about.html">About us</a></li>
+    </ul>
   </nav>
- </div>
 </header>
 
-
 <main>
-  <div class="content-container">
-  <section class="content">
-    <img src="/images/opening-hours.jpg" alt="image of a room inside the museum" class="images">
-    <p class="image-section-text">OPENING HOURS</p>
-    <p>Monday-Friday: 9:00 AM - 5:00 PM</p> 
-    <p>Saturday-Sunday: 10:00 AM - 6:00 PM</p>
-    <p>Closed on new years, christmas and easter.</p>
-</section>
+  <section class="content-container">
+    <article class="content">
+      <img src="/images/opening-hours.jpg" alt="image of a boy sitting on a bench inside the museum" class="images">
+      <h2 class="image-section-text">OPENING HOURS</h2>
+      <p>Monday-Friday: 9:00 AM - 5:00 PM</p> 
+      <p>Saturday-Sunday: 10:00 AM - 6:00 PM</p>
+      <p>Closed on new years, Christmas, and Easter.</p>
+      <p>Call us +47 456 348 931</p>
+    </article>
 
-
-    <section class="content">
-      <img src="/images/shop.jpg" alt="image of the shop inside the museum" class="images">
-      <p class="image-section-text">SHOP</p>
+    <article class="content">
+      <img src="/images/shop.jpg" alt="image of a shop sign" class="images">
+      <h2 class="image-section-text">SHOP</h2>
       <p>Immerse yourself in a world of culture and creativity at the Museum Gift Shop. Located conveniently within the museum premises, it's the perfect way to extend your journey beyond the exhibits. Take a piece of history home and make your visit an enduring memory.</p>
-  </section>
+    </article>
   
-  <section class="content">
-    <img src="/images/food.jpg" alt="image of a boy using VR glasses" class="images">
-    <p class="image-section-text">FOOD & DRINKS</p>
-    <p>Nestled amidst the cultural treasures of the museum, the Canteen is a haven where artistry extends beyond the canvas and into the kitchen. Our chefs draw inspiration from the exhibits, creating a menu that celebrates diversity, creativity</p>
-</section>
-</div>
-     
-<h1>CONTACT US</h1>
-<hr class="under-text-line">
-<br>
-<br>
-        
-<form action="contact-form" method="post">
+    <article class="content">
+      <img src="/images/food.jpg" alt="image of a girl eating ice cream" class="images">
+      <h2 class="image-section-text">FOOD & DRINKS</h2>
+      <p>Nestled amidst the cultural treasures of the museum, the Canteen is a haven where artistry extends beyond the canvas and into the kitchen. Our chefs draw inspiration from the exhibits, creating a menu that celebrates diversity, creativity.</p>
+    </article>
+  </section>
+
+  <section class="contact-section">
+    <h1>CONTACT US</h1>
+    <hr class="under-text-line">
+    
+    <form action="contact-form" method="post">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
       <label for="email">E-mail</label>
@@ -71,37 +65,39 @@
       <input type="tel" id="phone" name="phone">
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" required></textarea>
-      <button type="submit">Submit</button>
-  </form>
+      <button type="submit" class="button">SUBMIT</button>
+    </form>
+  </section>
 
+<!-- Our Locations -->
+  <section class="our-location-info">
+    <h2>Our Location</h2>
+    <img src="/images/exhibition-1863344_1920.jpg" alt="image of the museum entrance" class="location-image"> 
+    <address>
+      <p>Jernbanetorget 4b</p>
+      <p>0661 Oslo, Norway</p>
+    </address>
 
+<!-- Social Media section -->
+    <div class="social-media">
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+  </section>
 
-
-
-  <h3>OUR LOCATIONS</h3>
-  <img src="/images/exhibition-1863344_1920.jpg" alt="image of the museum entrance" class="location-image"> 
-  <p>Jernbanetorget 4b</p>
-  <p>0661 Oslo, Norway</p>
   <hr class="under-text-line">
-
-
-<div class="social-media">
-  <p>follow us</p>
-  <i class="fa-brands fa-square-instagram"></i>
-  <i class="fa-brands fa-facebook"></i>
-  <i class="fa-brands fa-twitter"></i>
-</div>
 </main>
-<br>
-<br>
-<br>
+
+<!-- Footer -->
 <footer>
- <div class="footer-section">
-      <img src="/images/logo.png" alt="the logo of the community science museum" class="footer-logo">
-      <p>© Community Science Museum</p>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of use</a>
- </div>
+  <div class="footer-section">
+    <img src="/images/logo.png" alt="the logo of the community science museum" class="footer-logo">
+    <p>&copy; 2023 Science Museum. All rights reserved.</p>
+      <a href="policy.html">Privacy Policy</a>
+      <a href="policy.html">Terms of Use</a>
+  </div>
 </footer>
+
 </body>
 </html>
