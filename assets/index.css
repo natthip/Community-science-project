@@ -8,7 +8,7 @@ body {
   
   /* Common styles for header elements */
   .top-header, .header-container {
-    background-color: black;
+    background-color: #000000;
   }
   
   .logo {
